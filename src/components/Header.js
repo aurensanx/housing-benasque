@@ -11,9 +11,13 @@ const HeaderContainer = styled.div`
   font-size: 1rem;
 `
 
+const StyledText = styled.h2`
+  text-align: center;
+`
+
 const Header = () => (
   <HeaderContainer>
-    <h2 styles={{'text-align': 'justify'}}>Encuentra tu piso ideal en Benasque</h2>
+    <StyledText>Encuentra tu piso ideal en Benasque</StyledText>
     <p>Guillermo Fillat te ayuda</p>
   </HeaderContainer>
 )
