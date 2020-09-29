@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 const StyledImg = styled.img`
   width: 800px !important;
+  max-width: 100vw;
 `
 
 const AppCarousel = () => (
