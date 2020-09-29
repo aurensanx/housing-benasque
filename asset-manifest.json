@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/static/js/main.c67a32d8.chunk.js",
-    "main.js.map": "/static/js/main.c67a32d8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.cca3ad30.js",
-    "runtime-main.js.map": "/static/js/runtime-main.cca3ad30.js.map",
-    "static/css/2.fb346933.chunk.css": "/static/css/2.fb346933.chunk.css",
-    "static/js/2.0dbec1da.chunk.js": "/static/js/2.0dbec1da.chunk.js",
-    "static/js/2.0dbec1da.chunk.js.map": "/static/js/2.0dbec1da.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.13cf7f2745a0db1ab728819c6a75b711.js": "/precache-manifest.13cf7f2745a0db1ab728819c6a75b711.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.fb346933.chunk.css.map": "/static/css/2.fb346933.chunk.css.map",
-    "static/css/main.5ecd60fb.chunk.css.map": "/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.0dbec1da.chunk.js.LICENSE.txt": "/static/js/2.0dbec1da.chunk.js.LICENSE.txt"
+    "main.css": "/housing-benasque/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/housing-benasque/static/js/main.d1d71e80.chunk.js",
+    "main.js.map": "/housing-benasque/static/js/main.d1d71e80.chunk.js.map",
+    "runtime-main.js": "/housing-benasque/static/js/runtime-main.903bf491.js",
+    "runtime-main.js.map": "/housing-benasque/static/js/runtime-main.903bf491.js.map",
+    "static/css/2.fb346933.chunk.css": "/housing-benasque/static/css/2.fb346933.chunk.css",
+    "static/js/2.1fb6cd17.chunk.js": "/housing-benasque/static/js/2.1fb6cd17.chunk.js",
+    "static/js/2.1fb6cd17.chunk.js.map": "/housing-benasque/static/js/2.1fb6cd17.chunk.js.map",
+    "index.html": "/housing-benasque/index.html",
+    "precache-manifest.fc30a519166e7c6129f872c1ff0d7750.js": "/housing-benasque/precache-manifest.fc30a519166e7c6129f872c1ff0d7750.js",
+    "service-worker.js": "/housing-benasque/service-worker.js",
+    "static/css/2.fb346933.chunk.css.map": "/housing-benasque/static/css/2.fb346933.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "/housing-benasque/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.1fb6cd17.chunk.js.LICENSE.txt": "/housing-benasque/static/js/2.1fb6cd17.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.cca3ad30.js",
+    "static/js/runtime-main.903bf491.js",
     "static/css/2.fb346933.chunk.css",
-    "static/js/2.0dbec1da.chunk.js",
+    "static/js/2.1fb6cd17.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.c67a32d8.chunk.js"
+    "static/js/main.d1d71e80.chunk.js"
   ]
 }
