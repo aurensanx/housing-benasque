@@ -25,7 +25,7 @@ function App() {
         <Header />
         <Router>
           <Switch>
-            <Route exact path="/">
+            <Route path="/">
               <Home />
             </Route>
             {/*<Route path="/about">*/}
