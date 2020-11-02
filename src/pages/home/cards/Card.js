@@ -3,15 +3,22 @@ import styled, { css } from 'styled-components'
 import { Text } from '../../../commons/layout/Text'
 
 const ImgContainer = styled.div`
-  width: 100%;
   margin: 1rem 0.5rem;
-  padding: 4rem 0.5rem;
   :first-child {
     margin-left: 0;
   }
   :last-child {
     margin-right: 0;
   }
+  @media (max-width: 48rem) {
+    margin: 1rem 0 0 0;
+  }
+  padding: 4rem 0.5rem;
+  @media (max-width: 48rem) {
+    padding: 2rem 0.5rem;
+  }
+  flex: 1 1 33%;
+
   background-image: url(${({ image }) => image});
   background-size: cover;
   border-radius: ${props => props.theme.borderRadius};
