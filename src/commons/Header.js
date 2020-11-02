@@ -4,31 +4,24 @@ import { Flex } from './layout/Flex'
 import { Text } from './layout/Text'
 
 const containerStyles = css`
-  background: var(--main-color);
+  background: ${props => props.theme.primaryColor};
   color: white;
   font-size: 1rem;
-  border-radius: 0.6rem;
+  border-radius: ${props => props.theme.borderRadius};
   margin-bottom: 1rem;
 `
 
 const titleStyles = css`
+  text-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px;
   padding: 1rem;
   @media (max-width: 48rem) {
     padding: 0.5rem;
   }
 `
 
-const subtitleStyles = css`
-  padding-bottom: 1rem;
-  @media (max-width: 48rem) {
-    padding-bottom: 0.5rem;
-  }
-`
-
 const Header = () => (
   <Flex center styles={containerStyles}>
-    <Text center variant='h2' styles={titleStyles}>Encuentra tu piso ideal en Benasque</Text>
-    <Text center styles={subtitleStyles}>Guillermo Fillat te ayuda</Text>
+    <Text center variant='h2' size={28} styles={titleStyles}>Header</Text>
   </Flex>
 )
 

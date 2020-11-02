@@ -8,7 +8,9 @@ const centerTextStyles = css`
 const StyledText = styled.p`
   margin: 0;
   transition: all 0.1s ease-in-out;
+  font-size: ${({ size }) => size ? size + 'px' : '1rem'};
   ${({ center }) => center && centerTextStyles}
+  
   ${({ styles }) => styles}
   
   @media (max-width: 48rem) {
