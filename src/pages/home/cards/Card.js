@@ -35,8 +35,8 @@ const textStyles = css`
 `
 
 export const Card = ({ image, text }) => (
-  <ImgContainer image={image}>
-    <Text center size={24} styles={textStyles}>{text}</Text>
+  <ImgContainer image={process.env.PUBLIC_URL + image}>
+    <Text center size={24} variant='h2' styles={textStyles}>{text}</Text>
   </ImgContainer>
 
 )

@@ -45,6 +45,6 @@ const StyledImg = styled.img`
 
 export const ImageFadeInOut = () => (
   <ImgContainer>
-    {images.map((image, i) => <StyledImg key={i} index={i} styles={i === images.length - 1 ? topStyles : bottomStyles} src={image} />)}
+    {images.map((image, i) => <StyledImg key={i} index={i} styles={i === images.length - 1 ? topStyles : bottomStyles} src={process.env.PUBLIC_URL + image} />)}
   </ImgContainer>
 )

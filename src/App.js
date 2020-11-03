@@ -14,7 +14,7 @@ const theme = {
 const AppWrapper = styled.div`
   padding: 1rem 2rem;
   @media (max-width: 48rem) {
-    padding: 0.5rem 1rem;
+    padding: 1rem;
   }
 `
 
