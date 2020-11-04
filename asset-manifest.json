@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/housing-benasque/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/housing-benasque/static/js/main.7e49a241.chunk.js",
-    "main.js.map": "/housing-benasque/static/js/main.7e49a241.chunk.js.map",
+    "main.js": "/housing-benasque/static/js/main.bb5c87b0.chunk.js",
+    "main.js.map": "/housing-benasque/static/js/main.bb5c87b0.chunk.js.map",
     "runtime-main.js": "/housing-benasque/static/js/runtime-main.903bf491.js",
     "runtime-main.js.map": "/housing-benasque/static/js/runtime-main.903bf491.js.map",
-    "static/js/2.5e0a223f.chunk.js": "/housing-benasque/static/js/2.5e0a223f.chunk.js",
-    "static/js/2.5e0a223f.chunk.js.map": "/housing-benasque/static/js/2.5e0a223f.chunk.js.map",
+    "static/js/2.1c8b5730.chunk.js": "/housing-benasque/static/js/2.1c8b5730.chunk.js",
+    "static/js/2.1c8b5730.chunk.js.map": "/housing-benasque/static/js/2.1c8b5730.chunk.js.map",
     "index.html": "/housing-benasque/index.html",
-    "precache-manifest.e6c78ac88db71286801dde996fb8b93e.js": "/housing-benasque/precache-manifest.e6c78ac88db71286801dde996fb8b93e.js",
+    "precache-manifest.bfe8de69deb2bf175c588ed550db91ec.js": "/housing-benasque/precache-manifest.bfe8de69deb2bf175c588ed550db91ec.js",
     "service-worker.js": "/housing-benasque/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/housing-benasque/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.5e0a223f.chunk.js.LICENSE.txt": "/housing-benasque/static/js/2.5e0a223f.chunk.js.LICENSE.txt"
+    "static/js/2.1c8b5730.chunk.js.LICENSE.txt": "/housing-benasque/static/js/2.1c8b5730.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.903bf491.js",
-    "static/js/2.5e0a223f.chunk.js",
+    "static/js/2.1c8b5730.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.7e49a241.chunk.js"
+    "static/js/main.bb5c87b0.chunk.js"
   ]
 }
