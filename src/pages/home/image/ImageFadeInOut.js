@@ -19,7 +19,7 @@ const ImgContainer = styled.div`
   width: 80%;
   @media only screen and (max-width: 48rem) {
     width: 100%;
-    margin: 1rem;
+    margin: 1.5rem;
   }
 `
 

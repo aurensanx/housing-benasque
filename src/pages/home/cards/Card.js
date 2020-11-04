@@ -11,7 +11,7 @@ const ImgContainer = styled.div`
     margin-right: 0;
   }
   @media (max-width: 48rem) {
-    margin: 0.25rem 0;
+    margin: 0.5rem 0;
   }
   padding: 4rem 0.5rem;
   @media (max-width: 48rem) {
