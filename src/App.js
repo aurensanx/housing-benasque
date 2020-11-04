@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { Header } from './commons/Header'
 import { Home } from './pages/home/Home'
 import { fadeInOutAnimation } from './styles/animations/FadeInOut'
+import { Valley } from './pages/valley/Valley'
+import { routes } from './pages/routes'
 
 const theme = {
   primaryColor: '#1abc9c',
@@ -17,12 +19,12 @@ function App() {
       <Header />
       <Router>
         <Switch>
-          <Route path="/">
+          <Route exact path={routes.home}>
             <Home />
           </Route>
-          {/*<Route path="/about">*/}
-          {/*  <About />*/}
-          {/*</Route>*/}
+          <Route exact path={routes.valley}>
+            <Valley />
+          </Route>
           {/*<Route path="/dashboard">*/}
           {/*  <Dashboard />*/}
           {/*</Route>*/}

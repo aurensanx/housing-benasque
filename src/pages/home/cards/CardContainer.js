@@ -2,6 +2,7 @@ import { Flex } from '../../../commons/layout/Flex'
 import { Card } from './Card'
 import React from 'react'
 import { css } from 'styled-components'
+import { routes } from '../../routes'
 
 const cardContainerStyles = css`
   width: 100%;
@@ -12,13 +13,13 @@ const cardContainerStyles = css`
 `
 
 const cards = [
-  {text: 'Quiénes somos', image: '/images/people.jpg'},
-  {text: 'Nuestros apartamentos', image: '/images/apartments.jpg'},
-  {text: 'Conoce el valle', image: '/images/valley.jpg'},
+  {text: 'Quiénes somos', image: '/images/people.jpg', url: ''},
+  {text: 'Nuestros apartamentos', image: '/images/apartments.jpg', url: ''},
+  {text: 'Conoce el valle', image: '/images/valley.jpg', url: routes.valley},
 ]
 
 export const CardContainer = () => (
   <Flex styles={cardContainerStyles}>
-    {cards.map(({ text, image }, i) => <Card key={i} text={text} image={image} />)}
+    {cards.map((card, i) => <Card key={i} {...card} />)}
   </Flex>
 )
