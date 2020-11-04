@@ -14,13 +14,12 @@ const images = [
 ]
 
 const ImgContainer = styled.div`
+  margin: 2rem 0;
   position: relative;
-  width: 60%;
-  @media only screen and (max-width: 75rem) {
-    width: 80%;
-  }
+  width: 80%;
   @media only screen and (max-width: 48rem) {
     width: 100%;
+    margin: 1rem;
   }
 `
 

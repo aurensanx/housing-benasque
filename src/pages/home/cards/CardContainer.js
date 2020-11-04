@@ -5,6 +5,7 @@ import { css } from 'styled-components'
 
 const cardContainerStyles = css`
   width: 100%;
+  margin: 0 2rem 2rem 2rem;
   @media (max-width: 48rem) {
     flex-direction: column;
   }

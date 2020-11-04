@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 import { Text } from '../../../commons/layout/Text'
 
 const ImgContainer = styled.div`
-  margin: 1rem 0.5rem;
+  margin: 0 0.5rem;
   :first-child {
     margin-left: 0;
   }
@@ -11,7 +11,7 @@ const ImgContainer = styled.div`
     margin-right: 0;
   }
   @media (max-width: 48rem) {
-    margin: 1rem 0 0 0;
+    margin: 0.25rem 0;
   }
   padding: 4rem 0.5rem;
   @media (max-width: 48rem) {

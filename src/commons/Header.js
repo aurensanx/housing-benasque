@@ -7,8 +7,6 @@ const containerStyles = css`
   background: ${props => props.theme.primaryColor};
   color: white;
   font-size: 1rem;
-  border-radius: ${props => props.theme.borderRadius};
-  margin-bottom: 1rem;
 `
 
 const titleStyles = css`
