@@ -33,18 +33,15 @@ const StyledLink = styled(Link)`
   :hover {
     cursor: pointer;
   }
-  text-decoration: none;
 `
 
 const textStyles = css`
   color: white;
-  text-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px;
-  font-weight: 500;
 `
 
 export const Card = ({ image, text, url }) => (
-  <StyledLink to={url} image={process.env.PUBLIC_URL + image}>
-      <Text center size={24} variant='h2' styles={textStyles}>{text}</Text>
+  <StyledLink to={url} image={image}>
+      <Text center size={24} variant='h2' bold shadow styles={textStyles}>{text}</Text>
   </StyledLink>
 
 )

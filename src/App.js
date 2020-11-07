@@ -16,10 +16,10 @@ const theme = {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Header />
       <Router>
         <Switch>
           <Route exact path={routes.home}>
+            <Header />
             <Home />
           </Route>
           <Route exact path={routes.valley}>

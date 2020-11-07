@@ -1,16 +1,23 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
+import carousel1 from '../../../assets/images/carousel/1.jpg'
+import carousel2 from '../../../assets/images/carousel/2.jpg'
+import carousel3 from '../../../assets/images/carousel/3.jpg'
+import carousel4 from '../../../assets/images/carousel/4.jpg'
+import carousel5 from '../../../assets/images/carousel/5.jpg'
+import carousel6 from '../../../assets/images/carousel/6.jpg'
+
 
 const transition = 2;
 const duration = 5;
 
 const images = [
-  '/images/carousel/1.jpg',
-  '/images/carousel/2.jpg',
-  '/images/carousel/3.jpg',
-  '/images/carousel/4.jpg',
-  '/images/carousel/5.jpg',
-  '/images/carousel/6.jpg'
+  carousel1,
+  carousel2,
+  carousel3,
+  carousel4,
+  carousel5,
+  carousel6,
 ]
 
 const ImgContainer = styled.div`
@@ -44,6 +51,6 @@ const StyledImg = styled.img`
 
 export const ImageFadeInOut = () => (
   <ImgContainer>
-    {images.map((image, i) => <StyledImg key={i} index={i} styles={i === images.length - 1 ? topStyles : bottomStyles} src={process.env.PUBLIC_URL + image} />)}
+    {images.map((image, i) => <StyledImg key={i} index={i} styles={i === images.length - 1 ? topStyles : bottomStyles} src={image} />)}
   </ImgContainer>
 )

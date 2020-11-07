@@ -1,13 +1,26 @@
 import React from 'react'
-import { Flex } from '../../commons/layout/Flex'
-import { css } from 'styled-components'
+import styled, { css } from 'styled-components'
+import { Text } from '../../commons/layout/Text'
+import { Header } from './Header'
 
-const containerStyles = css`
-  margin: 0 1rem;
-  padding: 5rem;
+const StyledSlide = styled.div`
+  height: 190vh;
 `
+
+const titleStyles = css`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-center: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+`
+
 export const Valley = () => (
-  <Flex center styles={containerStyles}>
-    asdfasdfasdf
-  </Flex>
+  <StyledSlide>
+    <Header />
+    <Text center variant='h2' size={40} shadow styles={titleStyles}>Descubre el valle de Benasque</Text>
+  </StyledSlide>
 )

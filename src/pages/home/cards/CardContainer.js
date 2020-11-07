@@ -3,6 +3,9 @@ import { Card } from './Card'
 import React from 'react'
 import { css } from 'styled-components'
 import { routes } from '../../routes'
+import people from '../../../assets/images/people.jpg'
+import apartments from '../../../assets/images/apartments.jpg'
+import valley from '../../../assets/images/valley.jpg'
 
 const cardContainerStyles = css`
   width: 100%;
@@ -13,9 +16,9 @@ const cardContainerStyles = css`
 `
 
 const cards = [
-  {text: 'Quiénes somos', image: '/images/people.jpg', url: ''},
-  {text: 'Nuestros apartamentos', image: '/images/apartments.jpg', url: ''},
-  {text: 'Conoce el valle', image: '/images/valley.jpg', url: routes.valley},
+  {text: 'Quiénes somos', image: people, url: ''},
+  {text: 'Nuestros apartamentos', image: apartments, url: ''},
+  {text: 'Conoce el valle', image: valley, url: routes.valley},
 ]
 
 export const CardContainer = () => (

@@ -10,7 +10,6 @@ const containerStyles = css`
 `
 
 const titleStyles = css`
-  text-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px;
   padding: 1rem;
   @media (max-width: 48rem) {
     padding: 0.5rem;
@@ -19,7 +18,7 @@ const titleStyles = css`
 
 const Header = () => (
   <Flex center styles={containerStyles}>
-    <Text center variant='h2' size={28} styles={titleStyles}>Header</Text>
+    <Text center variant='h2' size={28} shadow styles={titleStyles}>Apartamentos Fillat</Text>
   </Flex>
 )
 
