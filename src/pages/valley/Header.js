@@ -60,11 +60,11 @@ const bottomContainerStyles = css`
   right: 0;
 `
 
-export const Header = () => (
-  <StyledMedia>
+export const Header = React.forwardRef((props, ref) => (
+  <StyledMedia >
     <StyledImg
       src="https://static01.nyt.com/images/2020/09/27/magazine/27mag-Tetons-12/27mag-Tetons-11-02-master1050.jpg" />
-    <FlexCornerText styles={topContainerStyles}>
+    <FlexCornerText styles={topContainerStyles} ref={ref}>
       <Text bold size={12} uppercase styles={flexStyles}>Valle de Benasque</Text>
       <StyledLink to={routes.home}>
         <Text center variant='h2' size={28} shadow>Apartamentos Fillat</Text>
@@ -77,4 +77,4 @@ export const Header = () => (
       <Text bold size={12} uppercase>Foto de Guille Fillat</Text>
     </FlexCornerText>
   </StyledMedia>
-)
+))

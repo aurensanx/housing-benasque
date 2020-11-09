@@ -35,14 +35,13 @@ const StyledText = styled.p`
   }
 `
 
-export const Text = props => {
+export const Text = React.forwardRef((props, ref) => {
   const { variant, ...rest } = props
   return (
     <StyledText
       {...rest}
+      ref={ref}
       as={variant}
     />
   )
-}
-
-
+})
