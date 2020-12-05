@@ -23,7 +23,7 @@ const images = [
 const ImgContainer = styled.div`
   margin: 2rem 0;
   position: relative;
-  width: 80%;
+  width: min(66%, 59rem);
   @media only screen and (max-width: 48rem) {
     width: 100%;
     margin: 1.5rem;

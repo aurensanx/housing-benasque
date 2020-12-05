@@ -4,7 +4,7 @@ import { Flex } from './layout/Flex'
 import { Text } from './layout/Text'
 
 const containerStyles = css`
-  background: ${props => props.theme.primaryColor};
+  background: ${({ theme }) => theme.color.dark};
   color: white;
   font-size: 1rem;
 `

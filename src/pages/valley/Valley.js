@@ -4,16 +4,17 @@ import { Controller, Scene } from 'react-scrollmagic'
 import { Tween } from 'react-gsap'
 import { Text } from '../../commons/layout/Text'
 import { Header } from './Header'
+import { Video } from './Video'
 
-const SceneContainer = styled.div`
+export const SceneContainer = styled.div`
   height: ${({ height }) => height}vh;
 `
+
 
 const titleStyles = css`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-center: center;
   position: absolute;
   top: 0;
   width: 100%;
@@ -26,28 +27,34 @@ const titleStyles = css`
 export const Valley = () => (
   <Controller globalSceneOptions={{ triggerHook: 'onLeave' }}>
     <div id='trigger' />
-    <Header />
     <SceneContainer height={100} />
     <Scene
       triggerElement='#trigger'
       duration={200}
     >
       {(progress) => (
-        <Tween
-          to={{
-            opacity: 0,
-          }}
-          totalProgress={progress}
-          paused
-        >
-          <Text center variant='h2' size={40} shadow styles={titleStyles}>Descubre el valle de Benasque</Text>
-        </Tween>
+        <>
+          <Header progress={progress}/>
+          <Tween
+            to={{
+              opacity: 0,
+            }}
+            totalProgress={progress}
+            paused
+          >
+            <Text center variant='h2' size={40} shadow styles={titleStyles}>Mi ascenso a Monte Perdido</Text>
+          </Tween>
+        </>
       )}
     </Scene>
 
     <Scene pin>
-      <SceneContainer height={220} style={{ background: '#FF4F17'}}>
+      <SceneContainer height={150} style={{ background: '#FF4F17'}}>
+        <Video />
       </SceneContainer>
+    </Scene>
+    <Scene pin>
+      <SceneContainer height={150} style={{ background: '#736141'}} />
     </Scene>
   </Controller>
 )

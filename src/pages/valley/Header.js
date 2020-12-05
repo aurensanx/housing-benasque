@@ -5,6 +5,7 @@ import styled, { css } from 'styled-components'
 import { Flex } from '../../commons/layout/Flex'
 import { ReactComponent as ArrowDown } from '../../assets/svg/arrowDown.svg'
 import { Link } from 'react-router-dom'
+import photo1 from '../../assets/images/perdido/1.jpeg'
 
 
 const StyledMedia = styled.div`
@@ -63,13 +64,13 @@ const bottomContainerStyles = css`
 export const Header = React.forwardRef((props, ref) => (
   <StyledMedia >
     <StyledImg
-      src="https://static01.nyt.com/images/2020/09/27/magazine/27mag-Tetons-12/27mag-Tetons-11-02-master1050.jpg" />
+      src={photo1} />
     <FlexCornerText styles={topContainerStyles} ref={ref}>
-      <Text bold size={12} uppercase styles={flexStyles}>Valle de Benasque</Text>
+      <Text bold size={12} uppercase styles={flexStyles}>17 de agosto de 2020</Text>
       <StyledLink to={routes.home}>
-        <Text center variant='h2' size={28} shadow>Apartamentos Fillat</Text>
+        <Text center variant='h2' size={28} shadow>Valle de Ordesa</Text>
       </StyledLink>
-      <Text bold size={12} uppercase styles={[flexStyles, rightStyles]}>3404 metros</Text>
+      <Text bold size={12} uppercase styles={[flexStyles, rightStyles]}>3355 metros</Text>
     </FlexCornerText>
     <FlexCornerText styles={bottomContainerStyles}>
       <StyledArrow />

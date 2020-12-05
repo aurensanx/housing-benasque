@@ -8,7 +8,20 @@ import { Valley } from './pages/valley/Valley'
 import { routes } from './pages/routes'
 
 const theme = {
-  primaryColor: '#1abc9c',
+  // color: {
+  //   darkest: '#04080F',
+  //   dark: '#507DBC',
+  //   main: '#A1C6EA',
+  //   light: '#BBD1EA',
+  //   lightest: '#DAE3E5',
+  // },
+  color: {
+    darkest: '#04080F',
+    dark: '#2B2D42',
+    main: '#8D99AE',
+    light: '#F8F32B',
+    lightest: '#DAE3E5',
+  },
   borderRadius: '0.6rem',
   fadeInOut: fadeInOutAnimation
 }
