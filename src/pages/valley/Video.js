@@ -1,9 +1,5 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import { Flex } from '../../commons/layout/Flex'
-
-const videoContainerStyles = css`
-`
 
 const StyledVideo = styled.video`
   position: absolute;

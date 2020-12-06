@@ -61,11 +61,11 @@ const bottomContainerStyles = css`
   right: 0;
 `
 
-export const Header = React.forwardRef((props, ref) => (
-  <StyledMedia >
+export const Header = () => (
+  <StyledMedia>
     <StyledImg
       src={photo1} />
-    <FlexCornerText styles={topContainerStyles} ref={ref}>
+    <FlexCornerText styles={topContainerStyles}>
       <Text bold size={12} uppercase styles={flexStyles}>17 de agosto de 2020</Text>
       <StyledLink to={routes.home}>
         <Text center variant='h2' size={28} shadow>Valle de Ordesa</Text>
@@ -78,4 +78,4 @@ export const Header = React.forwardRef((props, ref) => (
       <Text bold size={12} uppercase>Foto de Guille Fillat</Text>
     </FlexCornerText>
   </StyledMedia>
-))
+)
