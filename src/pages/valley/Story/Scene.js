@@ -7,7 +7,7 @@ const StyledScene = styled.div`
   ${({ background }) => background && `background: ${background}`};
 `
 
-export const Scene = ({ height, background, children }) => (
+export const Scene = ({ height = 100, background, children }) => (
   <StyledScene height={height} background={background}>
     {children}
   </StyledScene>

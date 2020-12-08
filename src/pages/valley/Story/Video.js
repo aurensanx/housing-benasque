@@ -11,11 +11,11 @@ const StyledVideo = styled.video`
   transform: translate3d(-50%, 0, 0);
 `
 
-export const Video = () => (
+export const Video = ({ src }) => (
   <StyledVideo preload="auto"
          id="video_1606928977083"
          loop="loop"
          playsInline="playsinline"
-         src="https://int.nyt.com/data/videotape/finished/2020/09/1600804434/cuties-900w.mp4" />
+         src={src} />
 
 )

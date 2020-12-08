@@ -18,12 +18,6 @@ const StyledMedia = styled.div`
   transform: translateZ(0);
 `
 
-const StyledImg = styled.img`
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-`
-
 const FlexCornerText = styled(Flex)`
   position: absolute;
   padding: 1rem 2rem;
@@ -60,10 +54,8 @@ const bottomContainerStyles = css`
   right: 0;
 `
 
-export const Header = ({ photo }) => (
+export const Header = () => (
   <StyledMedia>
-    <StyledImg
-      src={photo} />
     <FlexCornerText styles={topContainerStyles}>
       <Text bold size={12} uppercase styles={flexStyles}>17 de agosto de 2020</Text>
       <StyledLink to={routes.home}>

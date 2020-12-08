@@ -1,11 +1,12 @@
-import React, { useLayoutEffect, useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
-const StyledContent = styled.div.attrs(props => ({
-  style: {
-    height: `${props.height}vh`
-  }
-}))`
+const StyledContent = styled.div
+  .attrs(props => ({
+    style: {
+      height: `${props.height}vh`
+    }
+  }))`
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -16,30 +17,21 @@ const StyledAsset = styled.div
   .attrs(props => ({
     style: {
       top: `${props.top}vh`,
-      opacity: `${props.top > props.height ? 0 : 1}`,
+      opacity: `${props.top > props.height ? 0 : 1}`
     }
-  }))
-  `
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    background: ${({ background }) => background};
+  }))`
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: ${({ background }) => background};
+`
 
-  `
-
-export const SceneContainer = ({ initialPosition = 100, height, background, children }) => {
-  const [scrollPosition, setScrollPosition] = useState(0)
-  const handleScroll = () => {
-    const position = window.scrollY / window.innerHeight * 100
-    setScrollPosition(Math.max(position - initialPosition + 100, 0))
-  }
-  useLayoutEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  })
+export const SceneContainer = ({ scrollPosition, initialPosition = 0, height = 100, background, children }) => {
+  const containerHeight = Math.max(scrollPosition - initialPosition + 100, 0)
+  const top = containerHeight - 100
   return (
-    <StyledContent height={scrollPosition}>
-      <StyledAsset top={scrollPosition - 100} height={height} background={background}>
+    <StyledContent height={containerHeight}>
+      <StyledAsset top={top} height={height} background={background}>
         {children}
       </StyledAsset>
     </StyledContent>
