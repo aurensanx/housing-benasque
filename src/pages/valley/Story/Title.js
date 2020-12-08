@@ -1,6 +1,6 @@
 import React from 'react'
 import { css } from 'styled-components'
-import { Text } from '../../commons/layout/Text'
+import { Text } from '../../../commons/layout/Text'
 
 const titleStyles = css`
   display: flex;

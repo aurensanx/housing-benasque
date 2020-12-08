@@ -1,11 +1,10 @@
-import { Text } from '../../commons/layout/Text'
-import { routes } from '../routes'
+import { Text } from '../../../commons/layout/Text'
+import { routes } from '../../routes'
 import React from 'react'
 import styled, { css } from 'styled-components'
-import { Flex } from '../../commons/layout/Flex'
-import { ReactComponent as ArrowDown } from '../../assets/svg/arrowDown.svg'
+import { Flex } from '../../../commons/layout/Flex'
+import { ReactComponent as ArrowDown } from '../../../assets/svg/arrowDown.svg'
 import { Link } from 'react-router-dom'
-import photo1 from '../../assets/images/perdido/1.jpeg'
 
 
 const StyledMedia = styled.div`
@@ -61,10 +60,10 @@ const bottomContainerStyles = css`
   right: 0;
 `
 
-export const Header = () => (
+export const Header = ({ photo }) => (
   <StyledMedia>
     <StyledImg
-      src={photo1} />
+      src={photo} />
     <FlexCornerText styles={topContainerStyles}>
       <Text bold size={12} uppercase styles={flexStyles}>17 de agosto de 2020</Text>
       <StyledLink to={routes.home}>
