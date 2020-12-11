@@ -1,6 +1,6 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
-import { BrowserRouter as Router, HashRouter, Route, Switch } from 'react-router-dom'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 import { Header } from './commons/Header'
 import { Home } from './pages/home/Home'
 import { fadeInOutAnimation } from './styles/animations/FadeInOut'
