@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0b77e045700264f6644dbfae8d2c41ff",
+    "revision": "30f6d76c3632c7422f0851c6d5ec14a4",
     "url": "/housing-benasque/index.html"
   },
   {
-    "revision": "1aa6b75558e560bc0339",
+    "revision": "5127ffe055397c80b4b0",
     "url": "/housing-benasque/static/css/main.c0c92423.chunk.css"
   },
   {
@@ -16,20 +16,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/housing-benasque/static/js/2.3d2efe97.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1aa6b75558e560bc0339",
-    "url": "/housing-benasque/static/js/main.ae3b5f84.chunk.js"
+    "revision": "5127ffe055397c80b4b0",
+    "url": "/housing-benasque/static/js/main.dd78d3f9.chunk.js"
   },
   {
     "revision": "ff4ee69bc62bf31b92a0",
     "url": "/housing-benasque/static/js/runtime-main.903bf491.js"
   },
   {
-    "revision": "8b0157fb85a404bda28507cddfe07af9",
-    "url": "/housing-benasque/static/media/1.8b0157fb.jpg"
+    "revision": "29a05b6e10e7dfc32d3fcd92f3d0ede4",
+    "url": "/housing-benasque/static/media/1.29a05b6e.jpg"
   },
   {
-    "revision": "af7fe258ade65c4c69a14a50da1059c1",
-    "url": "/housing-benasque/static/media/1.af7fe258.jpeg"
+    "revision": "8b0157fb85a404bda28507cddfe07af9",
+    "url": "/housing-benasque/static/media/1.8b0157fb.jpg"
   },
   {
     "revision": "20e5be7f3cb6754abfe897368248bb5a",

@@ -1,19 +1,18 @@
 {
   "files": {
     "main.css": "/housing-benasque/static/css/main.c0c92423.chunk.css",
-    "main.js": "/housing-benasque/static/js/main.ae3b5f84.chunk.js",
-    "main.js.map": "/housing-benasque/static/js/main.ae3b5f84.chunk.js.map",
+    "main.js": "/housing-benasque/static/js/main.dd78d3f9.chunk.js",
+    "main.js.map": "/housing-benasque/static/js/main.dd78d3f9.chunk.js.map",
     "runtime-main.js": "/housing-benasque/static/js/runtime-main.903bf491.js",
     "runtime-main.js.map": "/housing-benasque/static/js/runtime-main.903bf491.js.map",
     "static/js/2.3d2efe97.chunk.js": "/housing-benasque/static/js/2.3d2efe97.chunk.js",
     "static/js/2.3d2efe97.chunk.js.map": "/housing-benasque/static/js/2.3d2efe97.chunk.js.map",
     "index.html": "/housing-benasque/index.html",
-    "precache-manifest.db53c78893f090a8acdd9483b54963c7.js": "/housing-benasque/precache-manifest.db53c78893f090a8acdd9483b54963c7.js",
+    "precache-manifest.9d69f741953d8ecf937064b0ac83feab.js": "/housing-benasque/precache-manifest.9d69f741953d8ecf937064b0ac83feab.js",
     "service-worker.js": "/housing-benasque/service-worker.js",
     "static/css/main.c0c92423.chunk.css.map": "/housing-benasque/static/css/main.c0c92423.chunk.css.map",
     "static/js/2.3d2efe97.chunk.js.LICENSE.txt": "/housing-benasque/static/js/2.3d2efe97.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/housing-benasque/static/media/1.8b0157fb.jpg",
-    "static/media/1.jpeg": "/housing-benasque/static/media/1.af7fe258.jpeg",
     "static/media/2.jpeg": "/housing-benasque/static/media/2.20e5be7f.jpeg",
     "static/media/2.jpg": "/housing-benasque/static/media/2.ba917514.jpg",
     "static/media/3.jpg": "/housing-benasque/static/media/3.871b9451.jpg",
@@ -30,6 +29,6 @@
     "static/js/runtime-main.903bf491.js",
     "static/js/2.3d2efe97.chunk.js",
     "static/css/main.c0c92423.chunk.css",
-    "static/js/main.ae3b5f84.chunk.js"
+    "static/js/main.dd78d3f9.chunk.js"
   ]
 }
