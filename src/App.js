@@ -1,6 +1,6 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, HashRouter, Route, Switch } from 'react-router-dom'
 import { Header } from './commons/Header'
 import { Home } from './pages/home/Home'
 import { fadeInOutAnimation } from './styles/animations/FadeInOut'
@@ -29,7 +29,7 @@ const theme = {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Router>
+      <HashRouter basename="/">
         <Switch>
           <Route exact path={routes.home}>
             <Header />
@@ -42,7 +42,7 @@ function App() {
           {/*  <Dashboard />*/}
           {/*</Route>*/}
         </Switch>
-      </Router>
+      </HashRouter>
     </ThemeProvider>
 
   )
