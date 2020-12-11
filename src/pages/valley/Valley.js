@@ -5,7 +5,7 @@ import { Scene } from './Story/Scene'
 import { Title } from './Story/Title'
 import { Header } from './Story/Header'
 import photo1 from '../../assets/images/perdido/1.jpeg'
-import photo2 from '../../assets/images/perdido/2c.jpeg'
+import photo2 from '../../assets/images/perdido/2.jpeg'
 import video from '../../assets/videos/VID20200816205557.mp4'
 import { Image } from './Story/Image'
 
