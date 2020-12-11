@@ -5,10 +5,12 @@ import { Scene } from './Story/Scene'
 import { Title } from './Story/Title'
 import { Header } from './Story/Header'
 import photo1 from '../../assets/images/perdido/1.jpeg'
-import photo2 from '../../assets/images/perdido/2.jpeg'
+import photo2 from '../../assets/images/perdido/2c.jpeg'
+import video from '../../assets/videos/VID20200816205557.mp4'
 import { Image } from './Story/Image'
 
-const video = 'https://int.nyt.com/data/videotape/finished/2020/09/1600804434/cuties-900w.mp4'
+// const video = 'https://int.nyt.com/data/videotape/finished/2020/09/1600804434/cuties-900w.mp4'
+// const video = '../../assets/images/perdido/VID20200816205557.mp4'
 
 export const Valley = () => {
   const [scrollPosition, setScrollPosition] = useState(0)
@@ -30,7 +32,7 @@ export const Valley = () => {
       </Scene>
       <Scene height={150}>
         <SceneContainer scrollPosition={scrollPosition} initialPosition={100} height={150} background={'#FF4F17'}>
-          <Video src={video} />
+          <Video src={video} playing={scrollPosition > 100 && scrollPosition < 150} />
         </SceneContainer>
       </Scene>
       <Scene height={150} background={'white'}>
