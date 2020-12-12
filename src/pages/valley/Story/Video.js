@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useLayoutEffect, useRef } from 'react'
 import styled from 'styled-components'
 
 const StyledVideo = styled.video`
@@ -10,14 +10,31 @@ const StyledVideo = styled.video`
   transform: translate3d(-50%, 0, 0);
 `
 
-export const Video = ({ src, playing }) => {
+export const Video = ({ src, initialPosition }) => {
   const videoRef = useRef()
-  if (playing && videoRef.current && videoRef.current.paused) {
-    videoRef.current.play()
+
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY / window.innerHeight * 100
+    const isPlaying = scrollPosition > initialPosition && scrollPosition < initialPosition + 50
+    if (isPlaying && videoRef.current && videoRef.current.paused) {
+      videoRef.current.play()
+    }
+    if (!isPlaying && videoRef.current && !videoRef.current.paused) {
+      videoRef.current.pause()
+    }
   }
-  if (!playing && videoRef.current && !videoRef.current.paused) {
-    videoRef.current.pause()
-  }
+  // useLayoutEffect(() => {
+  //   const currentRef = videoRef.current
+  //   handleScroll(currentRef)
+  //   currentRef.addEventListener('scroll', e => handleScroll(e.target))
+  //   return () => {
+  //     currentRef.removeEventListener('scroll', e => handleScroll(e.target))
+  //   }
+  // })
+  useLayoutEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  })
   return (
     <StyledVideo
       ref={videoRef}
