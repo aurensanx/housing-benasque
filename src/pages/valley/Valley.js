@@ -33,47 +33,47 @@ import video13 from '../../assets/videos/13.mp4'
 
 export const Valley = () => (
   <>
-    <ImageScene src={photo1} initialPosition={0}>
+    <ImageScene src={photo1}>
       <Header />
       <Title />
     </ImageScene>
-    <VideoScene src={video1} initialPosition={100} />
+    <VideoScene src={video1} />
     <Scene height={150} background={'white'} />
-    <ImageScene src={photo2} initialPosition={400} />
-    <VideoScene src={video2} initialPosition={500} />
+    <ImageScene src={photo2} />
+    <VideoScene src={video2} />
     <Scene height={150} background={'white'} />
-    <ImageScene src={photo3} initialPosition={800} />
-    <VideoScene src={video3} initialPosition={900} />
+    <ImageScene src={photo3} />
+    <VideoScene src={video3} />
     <Scene height={150} background={'white'} />
-    <ImageScene src={photo4} initialPosition={1200} />
-    <VideoScene src={video4} initialPosition={1300} />
+    <ImageScene src={photo4} />
+    <VideoScene src={video4} />
     <Scene height={150} background={'white'} />
-    <ImageScene src={photo5} initialPosition={1600} />
-    <VideoScene src={video5} initialPosition={1700} />
+    <ImageScene src={photo5} />
+    <VideoScene src={video5} />
     <Scene height={150} background={'white'} />
-    <ImageScene src={photo6} initialPosition={2000} />
-    <VideoScene src={video6} initialPosition={2100} />
+    <ImageScene src={photo6} />
+    <VideoScene src={video6} />
     <Scene height={150} background={'white'} />
-    <ImageScene src={photo7} initialPosition={2400} />
-    <VideoScene src={video7} initialPosition={2500} />
+    <ImageScene src={photo7} />
+    <VideoScene src={video7} />
     <Scene height={150} background={'white'} />
-    <ImageScene src={photo8} initialPosition={2800} />
-    <VideoScene src={video8} initialPosition={2900} />
+    <ImageScene src={photo8} />
+    <VideoScene src={video8} />
     <Scene height={150} background={'white'} />
-    <ImageScene src={photo9} initialPosition={3200} />
-    <VideoScene src={video9} initialPosition={3300} />
+    <ImageScene src={photo9} />
+    <VideoScene src={video9} />
     <Scene height={150} background={'white'} />
-    <ImageScene src={photo10} initialPosition={3600} />
-    <VideoScene src={video10} initialPosition={3700} />
+    <ImageScene src={photo10} />
+    <VideoScene src={video10} />
     <Scene height={150} background={'white'} />
-    <ImageScene src={photo11} initialPosition={4000} />
-    <VideoScene src={video11} initialPosition={4100} />
+    <ImageScene src={photo11} />
+    <VideoScene src={video11} />
     <Scene height={150} background={'white'} />
-    <ImageScene src={photo12} initialPosition={4400} />
-    <VideoScene src={video12} initialPosition={4500} />
+    <ImageScene src={photo12} />
+    <VideoScene src={video12} />
     <Scene height={150} background={'white'} />
-    <ImageScene src={photo13} initialPosition={4800} />
-    <VideoScene src={video13} initialPosition={4900} />
+    <ImageScene src={photo13} />
+    <VideoScene src={video13} />
     <Scene height={150} background={'white'} />
   </>
 )

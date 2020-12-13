@@ -15,20 +15,29 @@ const StyledAsset = styled.div`
   background: ${({ background }) => background};
 `
 
-export const SceneContainer = ({ initialPosition = 0, height = 100, background, children }) => {
+const setProperties = (contentRef, assetRef, containerHeight, top, height) => {
+  // console.log('setProperties ' + containerHeight)
+  if (contentRef.current) contentRef.current.style.height = `${containerHeight}vh`
+  if (assetRef.current) {
+    assetRef.current.style.top = `${top}vh`
+    assetRef.current.style.opacity = top > height ? 0 : 1
+  }
+}
+
+export const SceneContainer = ({ initialPosition, height = 100, background, children }) => {
   const contentRef = useRef()
   const assetRef = useRef()
+
+  // console.log('SceneContainer ' + initialPosition)
+
   const handleScroll = () => {
     const scrollPosition = window.scrollY / window.innerHeight * 100
     const containerHeight = Math.max(scrollPosition - initialPosition + 100, 0)
     const top = containerHeight - 100
-    if (contentRef.current) contentRef.current.style.height = `${containerHeight}vh`
-    if (assetRef.current) {
-      assetRef.current.style.top = `${top}vh`
-      assetRef.current.style.opacity = top > height ? 0 : 1
-    }
+    setProperties(contentRef, assetRef, containerHeight, top, height)
   }
   useLayoutEffect(() => {
+    handleScroll()
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   })

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useLayoutEffect, useRef, useState } from 'react'
 import styled from 'styled-components'
 
 const StyledScene = styled.div`
@@ -7,8 +7,15 @@ const StyledScene = styled.div`
   ${({ background }) => background && `background: ${background}`};
 `
 
-export const Scene = ({ height = 100, background, children }) => (
-  <StyledScene height={height} background={background}>
-    {children}
-  </StyledScene>
-)
+export const Scene = ({ height = 100, background, children }) => {
+  const [initialPosition, setInitialPosition] = useState(undefined)
+  const ref = useRef(null)
+  useLayoutEffect(() => {
+    setInitialPosition(ref.current.getBoundingClientRect().top  / window.innerHeight * 100)
+  }, [setInitialPosition])
+  return (
+    <StyledScene ref={ref} height={height} background={background}>
+      {children && children(initialPosition)}
+    </StyledScene>
+  )
+}
