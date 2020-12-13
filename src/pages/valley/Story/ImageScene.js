@@ -15,7 +15,7 @@ export const ImageScene = ({ src, children }) => {
     )
   }
   return (
-    <Scene>
+    <Scene height={100}>
       {renderScene}
     </Scene>
   )

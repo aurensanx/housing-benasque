@@ -7,7 +7,7 @@ const StyledScene = styled.div`
   ${({ background }) => background && `background: ${background}`};
 `
 
-export const Scene = ({ height = 100, background, children }) => {
+export const Scene = ({ height, background, children }) => {
   const [initialPosition, setInitialPosition] = useState(undefined)
   const ref = useRef(null)
   useLayoutEffect(() => {

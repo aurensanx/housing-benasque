@@ -1,5 +1,4 @@
 import React from 'react'
-import { Scene } from './Story/Scene'
 import { Title } from './Story/Title'
 import { Header } from './Story/Header'
 import { VideoScene } from './Story/VideoScene'
@@ -30,8 +29,10 @@ import video10 from '../../assets/videos/10.mp4'
 import video11 from '../../assets/videos/11.mp4'
 import video12 from '../../assets/videos/12.mp4'
 import video13 from '../../assets/videos/13.mp4'
+import { text1 } from './Story'
+import { TextScene } from './Story/TextScene'
 
-const video = 'https://int.nyt.com/data/videotape/finished/2020/09/1600804434/cuties-900w.mp4'
+// const video = 'https://int.nyt.com/data/videotape/finished/2020/09/1600804434/cuties-900w.mp4'
 
 export const Valley = () => (
   <>
@@ -39,44 +40,44 @@ export const Valley = () => (
       <Header />
       <Title />
     </ImageScene>
-    <VideoScene src={video} />
-    <Scene height={150} background={'white'} />
+    <VideoScene src={video1} />
+    <TextScene text={text1} />
     <ImageScene src={photo2} />
-    <VideoScene src={video} />
-    <Scene height={150} background={'white'} />
+    <VideoScene src={video2} />
+    <TextScene text={text1} />
     <ImageScene src={photo3} />
-    <VideoScene src={video} />
-    <Scene height={150} background={'white'} />
+    <VideoScene src={video3} />
+    <TextScene text={text1} />
     <ImageScene src={photo4} />
-    <VideoScene src={video} />
-    <Scene height={150} background={'white'} />
+    <VideoScene src={video4} />
+    <TextScene text={text1} />
     <ImageScene src={photo5} />
-    <VideoScene src={video} />
-    <Scene height={150} background={'white'} />
+    <VideoScene src={video5} />
+    <TextScene text={text1} />
     <ImageScene src={photo6} />
-    <VideoScene src={video} />
-    <Scene height={150} background={'white'} />
+    <VideoScene src={video6} />
+    <TextScene text={text1} />
     <ImageScene src={photo7} />
-    <VideoScene src={video} />
-    <Scene height={150} background={'white'} />
+    <VideoScene src={video7} />
+    <TextScene text={text1} />
     <ImageScene src={photo8} />
-    <VideoScene src={video} />
-    <Scene height={150} background={'white'} />
+    <VideoScene src={video8} />
+    <TextScene text={text1} />
     <ImageScene src={photo9} />
-    <VideoScene src={video} />
-    <Scene height={150} background={'white'} />
+    <VideoScene src={video9} />
+    <TextScene text={text1} />
     <ImageScene src={photo10} />
-    <VideoScene src={video} />
-    <Scene height={150} background={'white'} />
+    <VideoScene src={video10} />
+    <TextScene text={text1} />
     <ImageScene src={photo11} />
-    <VideoScene src={video} />
-    <Scene height={150} background={'white'} />
+    <VideoScene src={video11} />
+    <TextScene text={text1} />
     <ImageScene src={photo12} />
-    <VideoScene src={video} />
-    <Scene height={150} background={'white'} />
+    <VideoScene src={video12} />
+    <TextScene text={text1} />
     <ImageScene src={photo13} />
-    <VideoScene src={video} />
-    <Scene height={150} background={'white'} />
+    <VideoScene src={video13} />
+    <TextScene text={text1} />
   </>
 )
 

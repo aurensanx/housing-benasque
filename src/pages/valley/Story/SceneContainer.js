@@ -16,7 +16,6 @@ const StyledAsset = styled.div`
 `
 
 const setProperties = (contentRef, assetRef, containerHeight, top, height) => {
-  // console.log('setProperties ' + containerHeight)
   if (contentRef.current) contentRef.current.style.height = `${containerHeight}vh`
   if (assetRef.current) {
     assetRef.current.style.top = `${top}vh`
@@ -27,8 +26,6 @@ const setProperties = (contentRef, assetRef, containerHeight, top, height) => {
 export const SceneContainer = ({ initialPosition, height = 100, background, children }) => {
   const contentRef = useRef()
   const assetRef = useRef()
-
-  // console.log('SceneContainer ' + initialPosition)
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY / window.innerHeight * 100
