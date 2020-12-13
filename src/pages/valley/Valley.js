@@ -31,49 +31,51 @@ import video11 from '../../assets/videos/11.mp4'
 import video12 from '../../assets/videos/12.mp4'
 import video13 from '../../assets/videos/13.mp4'
 
+const video = 'https://int.nyt.com/data/videotape/finished/2020/09/1600804434/cuties-900w.mp4'
+
 export const Valley = () => (
   <>
     <ImageScene src={photo1}>
       <Header />
       <Title />
     </ImageScene>
-    <VideoScene src={video1} />
+    <VideoScene src={video} />
     <Scene height={150} background={'white'} />
     <ImageScene src={photo2} />
-    <VideoScene src={video2} />
+    <VideoScene src={video} />
     <Scene height={150} background={'white'} />
     <ImageScene src={photo3} />
-    <VideoScene src={video3} />
+    <VideoScene src={video} />
     <Scene height={150} background={'white'} />
     <ImageScene src={photo4} />
-    <VideoScene src={video4} />
+    <VideoScene src={video} />
     <Scene height={150} background={'white'} />
     <ImageScene src={photo5} />
-    <VideoScene src={video5} />
+    <VideoScene src={video} />
     <Scene height={150} background={'white'} />
     <ImageScene src={photo6} />
-    <VideoScene src={video6} />
+    <VideoScene src={video} />
     <Scene height={150} background={'white'} />
     <ImageScene src={photo7} />
-    <VideoScene src={video7} />
+    <VideoScene src={video} />
     <Scene height={150} background={'white'} />
     <ImageScene src={photo8} />
-    <VideoScene src={video8} />
+    <VideoScene src={video} />
     <Scene height={150} background={'white'} />
     <ImageScene src={photo9} />
-    <VideoScene src={video9} />
+    <VideoScene src={video} />
     <Scene height={150} background={'white'} />
     <ImageScene src={photo10} />
-    <VideoScene src={video10} />
+    <VideoScene src={video} />
     <Scene height={150} background={'white'} />
     <ImageScene src={photo11} />
-    <VideoScene src={video11} />
+    <VideoScene src={video} />
     <Scene height={150} background={'white'} />
     <ImageScene src={photo12} />
-    <VideoScene src={video12} />
+    <VideoScene src={video} />
     <Scene height={150} background={'white'} />
     <ImageScene src={photo13} />
-    <VideoScene src={video13} />
+    <VideoScene src={video} />
     <Scene height={150} background={'white'} />
   </>
 )
