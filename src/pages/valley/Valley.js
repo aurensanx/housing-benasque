@@ -14,8 +14,6 @@ import photo8 from '../../assets/images/perdido/8.JPG'
 import photo9 from '../../assets/images/perdido/9.jpg'
 import photo10 from '../../assets/images/perdido/10.JPG'
 import photo11 from '../../assets/images/perdido/11.JPG'
-import photo12 from '../../assets/images/perdido/12.JPG'
-import photo13 from '../../assets/images/perdido/13.JPG'
 import video1 from '../../assets/videos/1.mp4'
 import video2 from '../../assets/videos/2.mp4'
 import video3 from '../../assets/videos/3.mp4'
@@ -27,8 +25,6 @@ import video8 from '../../assets/videos/8.mp4'
 import video9 from '../../assets/videos/9.mp4'
 import video10 from '../../assets/videos/10.mp4'
 import video11 from '../../assets/videos/11.mp4'
-import video12 from '../../assets/videos/12.mp4'
-import video13 from '../../assets/videos/13.mp4'
 import { text1 } from './Story'
 import { TextScene } from './Story/TextScene'
 
@@ -71,12 +67,6 @@ export const Valley = () => (
     <TextScene text={text1} />
     <ImageScene src={photo11} />
     <VideoScene src={video11} />
-    <TextScene text={text1} />
-    <ImageScene src={photo12} />
-    <VideoScene src={video12} />
-    <TextScene text={text1} />
-    <ImageScene src={photo13} />
-    <VideoScene src={video13} />
     <TextScene text={text1} />
   </>
 )

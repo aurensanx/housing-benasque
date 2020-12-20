@@ -19,7 +19,8 @@ const setProperties = (contentRef, assetRef, containerHeight, top, height) => {
   if (contentRef.current) contentRef.current.style.height = `${containerHeight}vh`
   if (assetRef.current) {
     assetRef.current.style.top = `${top}vh`
-    assetRef.current.style.opacity = top > height ? 0 : 1
+    // assetRef.current.style.opacity = top > height ? 0 : 1
+    assetRef.current.style.display = top > height ? 'none' : 'block'
   }
 }
 
