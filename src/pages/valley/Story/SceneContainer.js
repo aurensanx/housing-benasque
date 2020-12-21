@@ -16,10 +16,12 @@ const StyledAsset = styled.div`
 `
 
 const setProperties = (contentRef, assetRef, containerHeight, top, height) => {
-  if (contentRef.current) contentRef.current.style.height = `${containerHeight}vh`
-  if (assetRef.current) {
-    assetRef.current.style.top = `${top}vh`
-    assetRef.current.style.display = top > height || top === -100 ? 'none' : 'block'
+  if (top < height + 20) {
+    if (contentRef.current) contentRef.current.style.height = `${containerHeight}vh`
+    if (assetRef.current) {
+      assetRef.current.style.top = `${top}vh`
+      assetRef.current.style.display = top > height || top === -100 ? 'none' : 'block'
+    }
   }
 }
 
@@ -38,6 +40,10 @@ export const SceneContainer = ({ initialPosition, height = 100, background, chil
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   })
+  // useLayoutEffect(() => {
+  //   window.addEventListener('resize', handleScroll)
+  //   return () => window.removeEventListener('resize', handleScroll)
+  // })
   return (
     <StyledContent ref={contentRef}>
       <StyledAsset ref={assetRef} background={background}>

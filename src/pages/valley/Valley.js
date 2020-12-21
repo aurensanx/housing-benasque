@@ -32,10 +32,10 @@ import { TextScene } from './Story/TextScene'
 
 export const Valley = () => (
   <>
-    <ImageScene src={photo1}>
+    <ImageScene src={photo1} height={130}>
       <Header />
-      <Title />
     </ImageScene>
+    <Title />
     <VideoScene src={video1} />
     <TextScene text={text1} />
     <ImageScene src={photo2} />
