@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "731617b5c49b3283a1be600caf589a0b",
+    "revision": "e50ecf5584bb056c8e933dd5426afd74",
     "url": "/housing-benasque/index.html"
   },
   {
-    "revision": "45fb557cdebeaa5f7e92",
+    "revision": "2becef7e68fb12683887",
     "url": "/housing-benasque/static/css/main.c0c92423.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/housing-benasque/static/js/2.918e42d8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "45fb557cdebeaa5f7e92",
-    "url": "/housing-benasque/static/js/main.c7013396.chunk.js"
+    "revision": "2becef7e68fb12683887",
+    "url": "/housing-benasque/static/js/main.84a2484c.chunk.js"
   },
   {
     "revision": "ff4ee69bc62bf31b92a0",
