@@ -35,7 +35,7 @@ export const Title = () => {
   })
   return (
     <StyledContainer opacity={opacity}>
-      <Text ref={ref} center variant='h2' size={60} shadow>Mi ascenso a Monte Perdido</Text>
+      <Text ref={ref} center variant='h2' size={60} shadow>Mi ascenso a Monte Perdido 3</Text>
     </StyledContainer>
 
   )

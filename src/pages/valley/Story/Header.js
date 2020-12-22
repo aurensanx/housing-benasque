@@ -6,18 +6,6 @@ import { Flex } from '../../../commons/layout/Flex'
 import { ReactComponent as ArrowDown } from '../../../assets/svg/arrowDown.svg'
 import { Link } from 'react-router-dom'
 
-
-const StyledMedia = styled.div`
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-  transform: translateZ(0);
-`
-
 const FlexCornerText = styled(Flex)`
   position: absolute;
   padding: 1rem 2rem;
@@ -46,20 +34,19 @@ const StyledLink = styled(Link)`
 `
 
 const topContainerStyles = css`
-  top: 15px;
+  top: 0;
 `
 
 const bottomContainerStyles = css`
+  position: absolute;
   bottom: 0;
-  right: 0;
 `
 
 export const Header = () => {
   const ref = useRef()
 
   const handleScroll = () => {
-    const scrollPosition = 1 - window.scrollY / window.innerHeight
-    ref.current.style.opacity = scrollPosition
+    ref.current.style.opacity = 1 - window.scrollY / window.innerHeight
   }
 
   useLayoutEffect(() => {
@@ -68,8 +55,8 @@ export const Header = () => {
   })
 
   return (
-    <StyledMedia ref={ref}>
-      <FlexCornerText styles={topContainerStyles}>
+    <>
+      <FlexCornerText ref={ref} styles={topContainerStyles}>
         <Text bold size={12} uppercase styles={flexStyles}>17 de agosto de 2020</Text>
         <StyledLink to={routes.home}>
           <Text center variant='h2' size={28} shadow>Valle de Ordesa</Text>
@@ -81,6 +68,6 @@ export const Header = () => {
         <div />
         <Text bold size={12} uppercase>Foto de Guille Fillat</Text>
       </FlexCornerText>
-    </StyledMedia>
+    </>
   )
 }

@@ -3,9 +3,12 @@ import styled from 'styled-components'
 
 const StyledContent = styled.div`
   width: 100%;
+  height: 100vh;
   position: fixed;
   bottom: 0;
+  left: 0;
   overflow: hidden;
+  transform: translateZ(0);
 `
 
 const StyledAsset = styled.div`
