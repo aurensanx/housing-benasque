@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const StyledContent = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -19,12 +19,10 @@ const StyledAsset = styled.div`
 `
 
 const setProperties = (contentRef, assetRef, containerHeight, top, height) => {
-  if (top < height + 20) {
-    if (contentRef.current) contentRef.current.style.height = `${containerHeight}vh`
-    if (assetRef.current) {
-      assetRef.current.style.top = `${top}vh`
-      assetRef.current.style.display = top > height || top === -100 ? 'none' : 'block'
-    }
+  if (contentRef.current) contentRef.current.style.height = `${containerHeight}vh`
+  if (assetRef.current) {
+    assetRef.current.style.top = `${top}vh`
+    assetRef.current.style.display = top > height ? 'none' : 'block'
   }
 }
 
@@ -35,8 +33,7 @@ export const SceneContainer = ({ initialPosition, height = 100, background, chil
   const handleScroll = () => {
     const scrollPosition = window.scrollY / window.innerHeight * 100
     const containerHeight = Math.max(scrollPosition - initialPosition + 100, 0)
-    const top = containerHeight - 100
-    setProperties(contentRef, assetRef, containerHeight, top, height)
+    setProperties(contentRef, assetRef, containerHeight, containerHeight - 100, height)
   }
   useLayoutEffect(() => {
     handleScroll()
