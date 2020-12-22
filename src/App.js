@@ -38,9 +38,6 @@ function App() {
           <Route exact path={routes.valley}>
             <Valley />
           </Route>
-          {/*<Route path="/dashboard">*/}
-          {/*  <Dashboard />*/}
-          {/*</Route>*/}
         </Switch>
       </HashRouter>
     </ThemeProvider>
